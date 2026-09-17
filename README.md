@@ -143,6 +143,6 @@ O TripStay foi desenvolvido como um projeto de portfólio com o objetivo de prat
 Desenvolvedor Front-End
 
 - GitHub: [@johnnysousa1020](https://github.com/johnnysousa1020)
-- Projeto: [TripStay](https://github.com/johnnysouza1020/TripStay)
-- Demo: [TripStay Online](https://johnnysouza1020.github.io/TripStay/)
+- Projeto: [TripStay](https://github.com/johnnysousa1020/TripStay)
+- Demo: [TripStay Online](https://johnnysousa1020.github.io/TripStay/)
 ---
