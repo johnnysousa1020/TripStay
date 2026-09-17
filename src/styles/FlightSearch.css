@@ -1,0 +1,256 @@
+.flight-search{
+    padding: 70px 20px;
+    background: #f5f7fb;
+}
+
+.flight-search-container{
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(20, 35, 63, 0.10);
+    border: 1px solid #e5eaf1;
+}
+
+.flight-search-header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.flight-search-icon{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef5ff;
+    border-radius: 14px;
+    font-size: 25px;
+}
+
+.flight-search-header h2{
+    margin: 0 0 5px;
+    color: #17233c;
+    font-size: 26px;
+}
+
+.flight-search-header p{
+    margin: 0;
+    color: #718096;
+    font-size: 15px;
+}
+
+.flight-search-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.trip-type{
+    display: flex;
+    gap: 25px;
+}
+
+.trip-type label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #26344f;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trip-type input{
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.flight-routess{
+    display: grid;
+    grid-template-columns: 1fr 55px 1fr;
+    align-items: end;
+    gap: 15px;
+}
+
+.flight-field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flight-field label{
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flight-input-wrapper{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    border: 1px solid #d9e0ea;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.2s ease;
+}
+
+.flight-input-wrapper:focus-within{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.flight-input-wrapper span{
+    font-size: 18px;
+}
+
+.flight-input-wrapper input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #17233c;
+    background: transparent;
+}
+
+.flight-input-wrapper input::placeholder{
+    color: #98a2b3;
+}
+
+.swap-button{
+    width: 46px;
+    height: 46px;
+    border: 1px solid #d9e0ea;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-bottom: 4px;
+}
+
+.swap-button:hover{
+    background: #2563eb;
+    color: #ffffff;
+    transform: rotate(180deg);
+}
+
+.flight-details{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.flight-field input[type="date"], .flight-field select{
+    width: 100%;
+    height: 54px;
+    padding: 0 14px;
+    border: 1px solid #d9e0ea;
+    border-radius: 12px;
+    outline: none;
+    background: #ffffff;
+    color: #26344f;
+    font-size: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.flight-field input[type="date"]:focus, .flight-field select:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.flight-search-button{
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 13px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.flight-search-button:hover{
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.flight-search-error{
+    margin: -10px 0 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    color: #be123c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flight-search-success{
+    margin: -10px 0 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: #ecfdf3;
+    border: 1px solid #abefc6;
+    color: #067647;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 850px) {
+    .flight-details{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .flight-search{
+        padding: 45px 15px;
+    }
+
+    .flight-search-container{
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .flight-search-header h2{
+        font-size: 21px;
+    }
+
+    .flight-search-header p{
+        font-size: 14px;
+    }
+
+    .flight-routess{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .swap-button{
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .swap-button:hover{
+        transform: rotate(270deg);
+    }
+
+    .flight-details{
+        grid-template-columns: 1fr;
+    }
+
+    .trip-type{
+        gap: 18px;
+    }
+}

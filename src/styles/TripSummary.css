@@ -1,0 +1,390 @@
+.trip-summary {
+    width: min(1100px, 92%);
+    margin: 50px auto 70px;
+}
+
+.trip-summary-container {
+    background: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(20, 35, 63, 0.09);
+}
+
+/* HEADER */
+
+.trip-summary-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.trip-summary-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef5ff;
+    border-radius: 14px;
+    font-size: 24px;
+}
+
+.trip-summary-header h2 {
+    margin: 0 0 5px;
+    color: #17233c;
+    font-size: 25px;
+}
+
+.trip-summary-header p {
+    margin: 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+/* SECTION */
+
+.trip-summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.summary-section {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 18px;
+}
+
+.summary-section-title span {
+    font-size: 19px;
+}
+
+.summary-section-title h3 {
+    margin: 0;
+    color: #17233c;
+    font-size: 17px;
+}
+
+/* FLIGHT */
+
+.summary-flight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    align-items: center;
+    gap: 20px;
+}
+
+.summary-flight strong {
+    color: #17233c;
+    font-size: 17px;
+}
+
+.summary-flight p {
+    margin: 5px 0 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+.summary-flight-times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.summary-flight-times strong {
+    font-size: 20px;
+}
+
+.summary-flight-times span {
+    color: #98a2b3;
+}
+
+.summary-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.summary-price span {
+    color: #98a2b3;
+    font-size: 11px;
+}
+
+.summary-price strong {
+    margin-top: 4px;
+    color: #17233c;
+    font-size: 19px;
+}
+
+/* HOTEL */
+
+.summary-hotel {
+    display: grid;
+    grid-template-columns: 120px 1fr 180px;
+    align-items: center;
+    gap: 20px;
+}
+
+.summary-hotel img {
+    width: 120px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+.summary-hotel-info h3 {
+    margin: 0 0 7px;
+    color: #17233c;
+    font-size: 17px;
+}
+
+.summary-hotel-info p {
+    margin: 4px 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+.summary-hotel .summary-price {
+    align-items: flex-end;
+}
+
+.summary-hotel .summary-price span {
+    color: #718096;
+    font-size: 12px;
+}
+
+.summary-hotel .summary-price strong {
+    font-size: 20px;
+}
+
+/* TOTAL */
+
+.trip-summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 20px;
+    background: #f5f7fb;
+    border-radius: 14px;
+}
+
+.trip-summary-total div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.trip-summary-total span {
+    color: #17233c;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.trip-summary-total small {
+    color: #718096;
+    font-size: 12px;
+}
+
+.trip-summary-total strong {
+    color: #2563eb;
+    font-size: 25px;
+}
+
+/* BUTTON */
+
+.confirm-trip-button {
+    width: 100%;
+    height: 54px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 11px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.confirm-trip-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.trip-confirmation{
+    margin-top: 25px;
+    padding: 28px;
+    text-align: center;
+    background: #f8fbff;
+    border: 1px solid #cfe0f7;
+    border-radius: 16px;
+    animation: confirmationIn 0.35s ease;
+}
+
+.trip-connfirmation-icon{
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf8ef;
+    color: #16a34a;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.trip-confirmation h2{
+    margin: 0 0 6px;
+    color: #17233c;
+    font-size: 22px;
+}
+
+.trip-confirmation > p{
+    margin: 0 0 22px;
+    color: #718096;
+    font-size: 13px;
+}
+
+.confirmation-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    text-align: left;
+}
+
+.confirmation-info > div{
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 11px;
+}
+
+.confirmation-info span{
+    display: block;
+    margin-bottom: 7px;
+    color: #718096;
+    font-size: 11px;
+}
+
+.confirmation-info strong{
+    display: block;
+    color: #17233c;
+    font-size: 14px;
+}
+
+.confirmation-info small{
+    display: block;
+    margin-top: 4px;
+    color: #667085;
+    font-size: 11px;
+}
+
+.trip-code{
+    margin-top: 20px;
+    color: #667085;
+    font-size: 12px;
+}
+
+.trip-code strong{
+    color: #2563eb;
+}
+
+@keyframes confirmationIn {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .summary-flight {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .summary-flight-times {
+        justify-content: flex-start;
+    }
+
+    .summary-flight .summary-price {
+        align-items: flex-start;
+    }
+
+    .summary-hotel {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .summary-hotel img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .summary-hotel .summary-price {
+        grid-column: 1 / -1;
+        align-items: flex-start;
+    }
+
+    .confirmation-info{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .trip-summary {
+        width: 92%;
+    }
+
+    .trip-summary-container {
+        padding: 20px;
+    }
+
+    .trip-summary-header h2 {
+        font-size: 21px;
+    }
+
+    .summary-hotel {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-hotel img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .trip-summary-total {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .confirmation-info{
+        grid-template-columns: 1fr;
+    }
+
+    .trip-confirmation{
+        padding: 20px;
+    }
+
+}

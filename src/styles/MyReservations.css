@@ -1,0 +1,666 @@
+.my-reservations{
+    min-height: 100vh;
+    background: #f7f9fc;
+    color: #17233c;
+    padding: 40px 0 80px;
+}
+
+.my-reservations-container{
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+.reservations-back-button{
+    border: none;
+    background: transparent;
+    color: #34445f;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reservations-back-button:hover{
+    color: #0758ca;
+    transform: translateX(-3px);
+}
+
+.reservations-header{
+    margin: 30px 0 35px;
+}
+
+.reservations-header h1{
+    margin: 0 0 8px;
+    color: #14233f;
+    font-size: 16px;
+}
+
+.reservations-header p{
+    margin: 0;
+    color: #68758a;
+    font-size: 15px;
+}
+
+.reservations-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation-card{
+    display: grid;
+    grid-template-columns: 220px 1fr auto;
+    gap: 25px;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e4e8ef;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(20, 35, 63, 0.07);
+    transition: 0.3s;
+}
+
+.reservation-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(20, 35, 63, 0.11);
+    border-color: #cbdaf0;
+}
+
+.reservation-card > img{
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.resevation-info h2{
+    margin: 0 0 7px;
+    color: #14233f;
+    font-size: 20px;
+}
+
+.resevation-info > p{
+    margin: 0 0 18px;
+    color: #68758a;
+    font-size: 13px;
+}
+
+.reservation-details{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 12 25px;
+}
+
+.reservation-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reservation-details span{
+    color: #8791a2;
+    font-size: 16px;
+}
+
+.reservation-details strong{
+    color: #34445f;
+    font-size: 16px;
+}
+
+.reservations-price{
+    max-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.reservations-price span{
+    color: #7a8597;
+    font-size: 12px;
+}
+
+.reservations-price strong{
+    color: #0758ca;
+    font-size: 22px;
+}
+
+.empty-reservations{
+    background: #ffffff;
+    border: 1px solid #e4e8ef;
+    border-radius: 16px;
+    padding: 70px 30px;
+    text-align: center;
+    box-shadow: 0 7px 25px rgba(20, 35, 63, 0.06);
+}
+
+.empty-reservations > span{
+    display: block;
+    font-size: 55px;
+    margin-bottom: 18px;
+}
+
+.empty-reservations h2{
+    margin: 0 0 10px;
+    color: #14233f;
+    font-size: 23px;
+}
+
+.empty-reservations p{
+    margin: 0 0 25px;
+    color: #718096;
+    font-size: 14px;
+}
+
+.empty-reservations button{
+    border: none;
+    background: #0758ca;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.empty-reservations button:hover{
+    background: #064ba9;
+    transform: translateY(-2px);
+}
+
+.view-reservation-button{
+    border: 1px solid #0758ca;
+    background: #ffffff;
+    color: #0758ca;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-reservation-button:hover{
+    background: #f1f6ff;
+    transform: translateY(-1px);
+}
+
+.cancel-reservationsy-button{
+    border: 1px solid #e2a4ae;
+    background: #ffffff;
+    color: #c03939;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-reservationsy-button:hover{
+    background: #fff3f3;
+    border-color: #c03939;
+    transform: translateY(-1px);
+}
+
+.trip-reservation-card{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #dbe5f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(20, 45, 80, 0.08);
+}
+
+.trip-reservation-header{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.trip-reservation-header > span{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf3ff;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.trip-reservation-header h2{
+    margin: 0 0 4px;
+    color: #17233c;
+    font-size: 18px;
+}
+
+.trip-reservation-header p{
+    margin: 0;
+    color: #7b8794;
+    font-size: 12px;
+}
+
+.trip-reservation-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr auto;
+    gap: 25px;
+    align-items: center;
+}
+
+.trip-reservation-flight, .trip-reservation-hotel{
+    min-height: 100px;
+}
+
+.trip-reservation-flight{
+    padding-left: 25px;
+    border-right: 1px solid #edf1f5;
+}
+
+.trip-reservation-flight > span, .trip-reservation-hotel > div > span{
+    display: block;
+    margin-bottom: 9px;
+    color: #7b8794;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.trip-reservation-flight strong{
+    display: block;
+    margin-bottom: 5px;
+    color: #172b4d;
+    font-size: 17px;
+}
+
+.trip-reservation-flight p{
+    margin: 0 0 5px;
+    color: #4b5d73;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.trip-reservation-flight small{
+    color: #7b8794;
+    font-size: 11px;
+}
+
+.trip-reservation-hotel{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trip-reservation-hotel img{
+    width: 100px;
+    height: 78px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trip-reservation-hotel h3{
+    margin: 0 0 5px;
+    color: #172b4d;
+    font-size: 15px;
+}
+
+.trip-reservation-hotel p{
+    margin: 0 0 5px;
+    color: #667085;
+    font-size: 11px;
+}
+
+.trip-reservation-hotel small{
+    color: #7b8794;
+    font-size: 11px;
+}
+
+.trip-reservation-content .reservations-price{
+    min-width: 130px;
+    text-align: right;
+}
+
+.trip-reservation-content .reservations-price span{
+    display: block;
+    margin-bottom: 5px;
+    color: #7b8794;
+    font-size: 11px;
+}
+
+.trip-reservation-content .reservations-price strong{
+    color: #172b4d;
+    font-size: 19px;
+}
+
+.trip-reservation-dates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 17px;
+    background: #f8fafc;
+    border: 1px solid #edf1f5;
+    border-radius: 11px;
+}
+
+.trip-reservation-dates > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trip-reservation-dates span{
+    color: #7b8794;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.trip-reservation-dates strong{
+    color: #172b4d;
+    font-size: 12px;
+}
+
+.trip-reservation-card .cancel-reservationsy-button{
+    align-self: flex-end;
+    width: auto;
+    padding: 10px 18px;
+}
+
+.cancel-modall-overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 30, 50, 0.55);
+    backdrop-filter: blur(3px);
+    animation: modalOverlayin 0.2s ease;
+}
+
+.cancel-modall{
+    width: min(430px, 100%);
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e4eaf1;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(15, 30, 50, 0.25);
+    animation: cancelModalIn 0.25s ease;
+}
+
+.cancel-modall-icon{
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    background: #fff4e5;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.cancel-modall h2{
+    margin: 0 0 10px;
+    color: #172b4d;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.cancel-modall p{
+    margin: 0 auto 10px;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.cancel-modall-warning{
+    display: block;
+    margin-bottom: 25px;
+    color: #9e6700;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cancel-modall-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.cancel-modall-actions button{
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cancel-modall-back{
+    border: 1px solid #d7dee8;
+    background: #ffffff;
+}
+
+.cancel-modall-back:hover{
+    background: #f6f8fb;
+    transform: translateY(-1px);
+}
+
+.cancel-modall-confirm{
+    border: none;
+    background: #d64545;
+    color: #ffffff;
+}
+
+.cancel-modall-confirm:hover{
+    background: #c43838;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(214, 69, 69, 0.2);
+}
+
+@keyframes modalOverlayin {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes cancelModalIn {
+    from{
+        opacity: 0;
+        transform: translateY(15px) scale(0.97);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .reservation-card{
+        grid-template-columns: 180px 1fr;
+        gap: 20px;
+    }
+
+    .reservation-card > img{
+        width: 180px;
+        height: 135px;
+    }
+
+    .reservations-price{
+        grid-column: 2;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 15px;
+        border-top: 1px solid #edf0f4;
+    }
+
+    .trip-reservation-content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trip-reservation-flight{
+        border-right: none;
+        border-bottom: 1px solid #edf1f5;
+        padding-right: 0;
+        padding-bottom: 18px;
+    }
+
+    .trip-reservation-content .reservations-price{
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px) {
+    .my-reservations{
+        padding-top: 25px;
+    }
+
+    .reservations-header h1{
+        font-size: 30px;
+    }
+
+    .reservation-card{
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .reservation-card > img{
+        width: 100%;
+        height: 220px;
+    }
+
+    .reservation-details{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .reservations-price{
+        grid-column: auto;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .cancel-reservationsy-button{
+        width: 100%;
+    }
+
+    .view-reservation-button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .trip-reservation-card{
+        padding: 18px;
+    }
+
+    .trip-reservation-content{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .trip-reservation-flight{
+        border-bottom: 1px solid #edf1f5;
+        padding-bottom: 18px;
+    }
+
+    .trip-reservation-hotel img{
+        width: 85px;
+        height: 70px;
+    }
+
+    .trip-reservation-dates{
+        grid-template-columns: 1fr;
+    }
+
+    .trip-reservation-card .cancel-reservationsy-button{
+        width: 100%;
+    }
+
+    .cancel-modall{
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .cancel-modall h2{
+        font-size: 19px;
+    }
+
+    .cancel-modall p{
+        font-size: 13px;
+    }
+
+    .cancel-modall-actions{
+        flex-direction: column-reverse;
+    }
+
+    .cancel-modall-actions button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-reservations-container{
+        width: 90%;
+    }
+
+    .reservations-header{
+        margin-top: 25px;
+    }
+
+    .reservations-header h1{
+        font-size: 26px;
+    }
+
+    .reservations-header p{
+        font-size: 14px;
+    }
+
+    .reservation-card{
+        border-radius: 13px;
+        padding: 15px;
+    }
+
+    .reservation-card > img{
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    .resevation-info h2{
+        font-size: 18px;
+    }
+
+    .reservation-details{
+        gap: 14px 10px;
+    }
+
+    .reservation-details{
+        font-size: 20px;
+    }
+
+    .empty-reservations{
+        padding: 55px 20px;
+    }
+
+    .empty-reservations > span{
+        font-size: 48px;
+    }
+}

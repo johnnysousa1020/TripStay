@@ -1,0 +1,478 @@
+/* =========================
+   PÁGINA DE OFERTAS
+========================= */
+
+.offers-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 120px 20px 60px;
+}
+
+.offers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.offers-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.offers-header-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    font-size: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.offers-header h1 {
+    margin: 0 0 5px;
+
+    color: #243b5a;
+    font-size: 30px;
+}
+
+.offers-header p {
+    margin: 0;
+
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   VOLTAR
+========================= */
+
+.offers-page .back-home-button {
+    margin-bottom: 35px;
+
+    padding: 9px 15px;
+
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #243b5a;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.offers-page .back-home-button:hover {
+    background: #f3f6fa;
+    border-color: #cbd5e1;
+
+    transform: translateX(-2px);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.offers-section {
+    margin-bottom: 45px;
+}
+
+.offers-section-header {
+    margin-bottom: 20px;
+}
+
+.offers-section-header > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.offers-section-header > div > span {
+    font-size: 25px;
+}
+
+.offers-section-header h2 {
+    margin: 0 0 4px;
+
+    color: #243b5a;
+    font-size: 22px;
+}
+
+.offers-section-header p {
+    margin: 0;
+
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =========================
+   OFERTAS DE VOOS
+========================= */
+
+.flight-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.flight-offer-card {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.flight-offer-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+
+/* TOPO DO CARD */
+
+.offer-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.offer-card-top strong {
+    color: #243b5a;
+    font-size: 15px;
+}
+
+.offer-card-top > span {
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    background: #eaf8ef;
+    color: #238447;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* ROTA */
+
+.flight-route {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+}
+
+.flight-route > div:not(.flight-line) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.flight-route strong {
+    color: #243b5a;
+    font-size: 14px;
+}
+
+.flight-route span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.flight-line {
+    flex: 1;
+
+    color: #9aa5b4;
+
+    font-size: 10px;
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   PREÇO
+========================= */
+
+.offer-price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 18px;
+}
+
+.offer-price > span {
+    width: 100%;
+
+    color: #8a94a3;
+
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.offer-price strong {
+    color: #243b5a;
+    font-size: 22px;
+}
+
+.offer-price small {
+    color: #7b8491;
+    font-size: 11px;
+}
+
+
+/* BOTÃO */
+
+.flight-offer-card > button,
+.hotel-offer-content > button {
+    width: 100%;
+
+    padding: 10px 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #243b5a;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.flight-offer-card > button:hover,
+.hotel-offer-content > button:hover {
+    background: #1b2f49;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   OFERTAS DE HOTÉIS
+========================= */
+
+.hotel-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.hotel-offer-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hotel-offer-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+
+/* IMAGEM */
+
+.hotel-offer-image {
+    position: relative;
+
+    height: 190px;
+
+    overflow: hidden;
+}
+
+.hotel-offer-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.hotel-offer-card:hover .hotel-offer-image img {
+    transform: scale(1.05);
+}
+
+
+/* DESCONTO */
+
+.hotel-offer-image > span {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    background: #eaf8ef;
+    color: #238447;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* CONTEÚDO */
+
+.hotel-offer-content {
+    padding: 17px;
+}
+
+.hotel-offer-content h3 {
+    margin: 0 0 9px;
+
+    color: #243b5a;
+    font-size: 17px;
+}
+
+.hotel-offer-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-bottom: 15px;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+/* PREÇO DO HOTEL */
+
+.hotel-offer-content .offer-price {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hotel-offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flight-offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .offers-page {
+        padding: 100px 15px 40px;
+    }
+
+    .offers-header h1 {
+        font-size: 25px;
+    }
+
+    .offers-header p {
+        font-size: 13px;
+    }
+
+    .flight-offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel-offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .offers-header {
+        align-items: flex-start;
+    }
+
+    .offers-header-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 21px;
+    }
+
+    .offers-header h1 {
+        font-size: 22px;
+    }
+
+    .offers-section-header h2 {
+        font-size: 19px;
+    }
+
+    .flight-offer-card {
+        padding: 16px;
+    }
+
+    .hotel-offer-image {
+        height: 200px;
+    }
+
+}

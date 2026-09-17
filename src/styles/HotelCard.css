@@ -1,0 +1,253 @@
+.hotel-cardd{
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e8edf3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(20, 45, 80, 0.06);
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+.hotel-cardd:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(20, 45, 80, 0.12);
+}
+
+.hotel-card-imagee{
+    position: relative;
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+}
+
+.hotel-card-imagee img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hotel-cardd:hover .hotel-card-imagee img{
+    transform: scale(1.05);
+}
+
+.hotel-badgee{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.hotel-badgee.blue{
+    background: #1d5fa7;
+}
+
+.hotel-badgee.green{
+    background: #45a85a;
+}
+
+.hotel-badgee.purple{
+    background: #a832a8;
+}
+
+.favorite-buttonn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #243b5a;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.favorite-buttonn:hover{
+    transform: scale(1.08);
+    background: #ffffff;
+}
+
+.hotel-card-cotentt{
+    padding: 15px 14px 14px;
+}
+
+.hotel-card-cotentt h3{
+    margin: 0 0 8px;
+    color: #172b4d;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.hotel-locations{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 12px;
+    color: #667085;
+    font-size: 11px;
+}
+
+.ratingg{
+    color: #172b4d;
+    font-weight: 600;
+}
+
+.reviewss{
+    color: #7b8794;
+}
+
+.locationn{
+    color: #667085;
+}
+
+.hotel-amenitiess{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    min-height: 20px;
+    margin-bottom: 16px;
+    color: #667085;
+    font-size: 11px;
+}
+
+.hotel-amenitiess span{
+    white-space: nowrap;
+}
+
+.hotel-card-footerr{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hotel-pricee{
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.hotel-pricee strong{
+    color: #172b4d;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hotel-pricee span{
+    color: #7b8794;
+    font-size: 10px;
+}
+
+.hotel-card-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    min-width: 105px;
+}
+
+.details-buttonn{
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 7px;
+    background: #102f56;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.details-buttonn:hover{
+    background: #172b4d;
+    transform: translateY(-1px);
+}
+
+.choose-hotel-button{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.choose-hotel-button:hover{
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .hotel-card-imagee{
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hotel-card-imagee{
+        height: 190px;
+    }
+
+    .hotel-card-cotentt{
+        padding: 16px;
+    }
+
+    .hotel-card-cotentt h3{
+        font-size: 17px;
+    }
+
+    .hotel-locations{
+        font-size: 12px;
+    }
+
+    .hotel-amenitiess{
+        font-size: 12px;
+    }
+
+    .hotel-pricee strong{
+        font-size: 16px;
+    }
+
+    .details-buttonn{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .hotel-card-actions{
+        min-width: 115px;
+    }
+
+    .details-buttonn, .choose-hotel-button{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hotel-card-footerr{
+        align-items: flex-end;
+    }
+}

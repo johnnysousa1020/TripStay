@@ -1,0 +1,94 @@
+.destinations{
+    position: relative;
+    background: #ffffff;
+    padding: 78px 0 55px;
+}
+
+.destinations-conatiner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-header h2{
+    margin: 0;
+    color: #172b4d;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.see-all{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    color: #172b4d;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.see-all span{
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.see-all:hover span{
+    transform: translateX(4px);
+}
+
+.destions-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 13px;
+}
+
+@media (max-width: 1050px) {
+    .destions-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .destinations{
+        padding: 55px 0 40px;
+    }
+
+    .destinations-conatiner{
+        padding: 0 20px;
+    }
+
+    .section-header{
+        margin-bottom: 18px;
+    }
+
+    .section-header h2{
+        font-size: 20px;
+    }
+
+    .destions-grid{
+        display: flex;
+        overflow-x: auto;
+        gap: 12px;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+    }
+
+    .destions-grid::-webkit-scrollbar{
+        display: none;
+    }
+
+    .destination-card{
+        min-width: 190px;
+        height: 145px;
+    }
+}

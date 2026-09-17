@@ -1,0 +1,141 @@
+.featured-hotels{
+    background: #ffffff;
+    padding: 0 0 55px;
+}
+
+.featured-hotels-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hotel-gridds{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.selected-hotel-featured{
+    margin-top: 35px;
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.10);
+}
+
+.selected-hotel-header-featured{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.selected-hotel-header-featured > span{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecfdf3;
+    color: #16a34a;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.selected-hotel-header-featured h3{
+    margin: 0 0 4px;
+    color: #172b4d;
+    font-size: 19px;
+}
+
+.selected-hotel-header-featured p{
+    margin: 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+.selected-hotel-content-featured{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.selected-hotel-content-featured img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.selected-hotel-info-featured h3{
+    margin: 0 0 8px;
+    color: #172b4d;
+    font-size: 20px;
+}
+
+.selected-hotel-info-featured p{
+    margin: 0 0 12px;
+    color: #667085;
+    font-size: 14px;
+}
+
+.selected-hotel-info-featured strong{
+    color: #172b4d;
+    font-size: 19px;
+}
+
+.selected-hotel-info-featured strong span{
+    color: #7b8794;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (max-width: 1050px) {
+    .hotel-gridds{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    .featured-hotels{
+        padding-bottom: 40px;
+    }
+
+    .featured-hotels-container{
+        padding: 0 20px;
+    }
+
+    .hotel-gridds{
+/*        display: flex; */
+        overflow-x: auto;
+        gap: 14px;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+    }
+
+    .hotel-gridds::-webkit-scrollbar{
+        display: none;
+    }
+
+    .hotel-gridds .hotel-card{
+        min-width: 285px;
+        flex-shrink: 0;
+    }
+
+    .selected-hotel-featured{
+        padding: 20px;
+    }
+
+    .selected-hotel-content-featured{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .selected-hotel-content-featured img{
+        width: 100%;
+        height: 180px;
+    }
+}
